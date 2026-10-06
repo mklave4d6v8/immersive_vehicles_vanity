@@ -1,0 +1,1922 @@
+{
+  "generic": {
+    "type": "seat",
+    "width": 0.375,
+    "height": 0.25
+  },
+  "seat": {},
+  "parts": [
+    {
+      "pos": [0.0,0.25,0.0],
+      "isController": true,
+      "maxValue": 3.0,
+      "types": [
+        "seat",
+        "seat_invisible"
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "part_present_1",
+          "axis": [0.0,-0.251,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ],
+      "activeAnimations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_1",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "applyAfter": "menu_root_translucent",
+      "collisionTypes": [
+        "click",
+        "attack"
+      ],
+      "collisions": [
+        {
+          "pos": [-0.25,1.21875,0.0],
+          "width": 0.125,
+          "height": 0.0625,
+          "action": {
+            "action": "set",
+            "variable": "tuner_menu_page",
+            "value": 0.0
+          }
+        },
+        {
+          "pos": [0.0,1.21875,0.0],
+          "width": 0.125,
+          "height": 0.0625,
+          "action": {
+            "action": "set",
+            "variable": "tuner_menu_page",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [0.25,1.21875,0.0],
+          "width": 0.125,
+          "height": 0.0625,
+          "action": {
+            "action": "set",
+            "variable": "tuner_menu_page",
+            "value": 2.0
+          }
+        }
+      ]
+    },
+    {
+      "applyAfter": "menu_level1_root",
+      "collisionTypes": [
+        "click",
+        "attack"
+      ],
+      "collisions": [
+        {
+          "pos": [-0.28125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_steering",
+            "value": -0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_steering",
+            "value": 0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_steering",
+            "value": 0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.28125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu1_mode_steering",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [-0.28125,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_braking",
+            "value": -0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.125,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_braking",
+            "value": 0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.28125,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu1_mode_braking",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [-0.28125,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_axleratio",
+            "value": -0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.125,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_axleratio",
+            "value": 0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.28125,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu1_mode_axleratio",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [-0.28125,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_dragcoeff",
+            "value": -0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.125,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu1_value_dragcoeff",
+            "value": 0.05,
+            "clampMin": -9,
+            "clampMax": 9
+          }
+        },
+        {
+          "pos": [0.28125,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu1_mode_dragcoeff",
+            "value": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "applyAfter": "menu_level2_root",
+      "collisionTypes": [
+        "click",
+        "attack"
+      ],
+      "collisions": [
+        {
+          "pos": [-0.28125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu2_value_rpm",
+            "value": -50,
+            "clampMin": -20000,
+            "clampMax": 20000
+          }
+        },
+        {
+          "pos": [0.125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu2_value_rpm",
+            "value": 50,
+            "clampMin": -20000,
+            "clampMax": 20000
+          }
+        },
+        {
+          "pos": [0.28125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu2_mode_rpm",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [-0.28125,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu2_value_idlerpm",
+            "value": -50,
+            "clampMin": -20000,
+            "clampMax": 20000
+          }
+        },
+        {
+          "pos": [0.125,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu2_value_idlerpm",
+            "value": 50,
+            "clampMin": -20000,
+            "clampMax": 20000
+          }
+        },
+        {
+          "pos": [0.28125,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu2_mode_idlerpm",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [-0.28125,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu2_value_fuelpower",
+            "value": -0.05,
+            "clampMin": -24,
+            "clampMax": 24
+          }
+        },
+        {
+          "pos": [0.125,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu2_value_fuelpower",
+            "value": 0.05,
+            "clampMin": -24,
+            "clampMax": 24
+          }
+        },
+        {
+          "pos": [0.28125,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu2_mode_fuelpower",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [-0.28125,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu2_value_heatcoeff",
+            "value": -0.05,
+            "clampMin": -10,
+            "clampMax": 10
+          }
+        },
+        {
+          "pos": [0.125,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "increment",
+            "variable": "tuner_menu2_value_heatcoeff",
+            "value": 0.05,
+            "clampMin": -10,
+            "clampMax": 10
+          }
+        },
+        {
+          "pos": [0.28125,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu2_mode_heatcoeff",
+            "value": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "applyAfter": "menu_level3_root",
+      "collisionTypes": [
+        "click",
+        "attack"
+      ],
+      "collisions": [
+        {
+          "pos": [-0.28125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [-0.15625,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.0,1.09375,0.0],
+          "width": 0.1875,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.15625,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.28125,1.09375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [-0.28125,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [-0.15625,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.0,0.9375,0.0],
+          "width": 0.1875,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.15625,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.28125,0.9375,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_realspeed",
+            "value": 1
+          }
+        },
+        {
+          "pos": [-0.28125,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_invincible",
+            "value": 1
+          }
+        },
+        {
+          "pos": [-0.15625,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_invincible",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.0,0.78125,0.0],
+          "width": 0.1875,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_invincible",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.15625,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_invincible",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.28125,0.78125,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_invincible",
+            "value": 1
+          }
+        },
+        {
+          "pos": [-0.28125,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_freefuel",
+            "value": 1
+          }
+        },
+        {
+          "pos": [-0.15625,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_freefuel",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.0,0.625,0.0],
+          "width": 0.1875,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_freefuel",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.15625,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_freefuel",
+            "value": 1
+          }
+        },
+        {
+          "pos": [0.28125,0.625,0.0],
+          "width": 0.125,
+          "height": 0.125,
+          "action": {
+            "action": "toggle",
+            "variable": "tuner_menu3_value_freefuel",
+            "value": 1
+          }
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Semi-universal Tune Kit",
+      "description": "Used for modifying and tuning vehicle handling\nMust remain on vehicle to function. Install in place of a controller seat, then place your preferred seat onto this one.\nHowever, modifications are saved to this part, and will resume when this part is replaced!\n\nMake the best of your vehicle with IVLabs!",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "initialVariables": [
+  ],
+  "variableModifiers": [
+    {
+      "variable": "tuner_init",
+      "minValue": 0.0,
+      "maxValue": 1.0,
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_init",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tick",
+          "axis": [0.0,0.0,1.0],
+          "offset": -4.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "tuner_menu1_value_steering",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_init",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "!twtly",
+          "axis": [0.0,0.0,0.5],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "tuner_menu1_value_braking",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_init",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "!twtly",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "tuner_menu1_value_axleratio",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_init",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "!twtly",
+          "axis": [0.0,0.0,3.55],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "tuner_menu1_value_dragcoeff",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_init",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "!twtly",
+          "axis": [0.0,0.0,0.35],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_steeringForceFactor",
+      "minValue": -9.0,
+      "maxValue": 9.0,
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_realsteer",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu1_value_steering",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu1_mode_steering",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu1_value_steering",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "steering_speedloss",
+      "maxValue": 1.0,
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_realsteer",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "velocity",
+          "axis": [0.0,0.0,0.05],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "!true",
+          "axis": [0.0,-0.15,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_engine_reversed_1",
+          "axis": [-0.5,0.0,0.0],
+          "offset": 1.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "rudder",
+          "axis": [0.12222222222222222,0.0,0.0],
+          "offset": -0.3055555555555556,
+          "clampMin": -1.0E-7,
+          "clampMax": 1.0,
+          "absolute": true
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_steeringForceFactor",
+      "maxValue": 2.0,
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_realsteer",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "steering_speedloss",
+          "axis": [0.0,0.0,-0.98],
+          "offset": 1.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_engine_reversed_1",
+          "axis": [0.0,0.5,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "slip_degrees",
+          "axis": [-0.03,0.0,0.0],
+          "offset": 1.3,
+          "clampMin": 0.5,
+          "clampMax": 1.0,
+          "absolute": true
+        },
+        {
+          "animationType": "translation",
+          "variable": "slip_degrees",
+          "axis": [-0.1111111111111111,0.0,0.0],
+          "offset": 20.0,
+          "clampMin": 0.001,
+          "clampMax": 1.0,
+          "absolute": true
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_overSteer",
+      "maxValue": 2.0,
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_realsteer",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "twtly",
+          "axis": [0.0,0.0,-0.98],
+          "offset": 1.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_engine_reversed_1",
+          "axis": [0.5,0.0,0.0],
+          "offset": 1.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "slip_degrees",
+          "axis": [-0.03,0.0,0.0],
+          "offset": 1.3,
+          "clampMin": 0.5,
+          "clampMax": 1.0,
+          "absolute": true
+        },
+        {
+          "animationType": "translation",
+          "variable": "slip_degrees",
+          "axis": [-0.1111111111111111,0.0,0.0],
+          "offset": 20.0,
+          "clampMin": 0.001,
+          "clampMax": 1.0,
+          "absolute": true
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_steeringForceIgnoresSpeed",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_realsteer",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu3_value_realsteer",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_brakingFactor",
+      "minValue": -9.0,
+      "maxValue": 9.0,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu1_value_braking",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu1_mode_braking",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu1_value_braking",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "activator",
+          "variable": "twtly",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu3_value_realspeed",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "speed_factor",
+          "axis": [-1.0,0.0,0.0],
+          "offset": 2.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_dragCoefficient",
+      "minValue": -9.0,
+      "maxValue": 9.0,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu1_value_dragcoeff",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu1_mode_dragcoeff",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu1_value_dragcoeff",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "activator",
+          "variable": "twtly",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu3_value_realspeed",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "speed_factor",
+          "axis": [0.625,0.0,0.0],
+          "offset": 0.375,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_axleRatio",
+      "minValue": -27.0,
+      "maxValue": 27.0,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu1_value_axleratio",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu1_mode_axleratio",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu1_value_axleratio",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "activator",
+          "variable": "twtly",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu3_value_realspeed",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "speed_factor",
+          "axis": [0.625,0.0,0.0],
+          "offset": 0.375,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_fuelConsumption_1",
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_fuelpower",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu2_mode_fuelpower",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_fuelpower",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "activator",
+          "variable": "twtly",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu3_value_realspeed",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "speed_factor",
+          "axis": [-1.0,0.0,0.0],
+          "offset": 2.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_maxRPM_1",
+      "minValue": 50,
+      "maxValue": 65535,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_rpm",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu2_mode_rpm",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_rpm",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_maxSafeRPM_1",
+      "minValue": 50,
+      "maxValue": 65535,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_rpm",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu2_mode_rpm",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_rpm",
+          "axis": [0.0,0.0,1.0625],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_revlimitRPM_1",
+      "minValue": 50,
+      "maxValue": 65535,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_rpm",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu2_mode_rpm",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_rpm",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_idleRPM_1",
+      "minValue": 0,
+      "maxValue": 65535,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_idlerpm",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu2_mode_idlerpm",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_idlerpm",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_startRPM_1",
+      "minValue": 0,
+      "maxValue": 65535,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_idlerpm",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu2_mode_idlerpm",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_idlerpm",
+          "axis": [0.0,0.0,0.9],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_stallRPM_1",
+      "minValue": 0,
+      "maxValue": 65535,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_idlerpm",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu2_mode_idlerpm",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_idlerpm",
+          "axis": [0.0,0.0,0.8],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_heatingCoefficient_1",
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_heatcoeff",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_menu2_mode_heatcoeff",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_menu2_value_heatcoeff",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_damage",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_invincible",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "twtly",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_electric_usage",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_invincible",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_electric_power",
+          "axis": [0.0,0.0,1],
+          "offset": -14.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_engineWearFactor_1",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_invincible",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_engine_hours_1",
+          "axis": [0.0,0.0,-10.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_superchargerFuelConsumption_1",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_freefuel",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_fuelConsumption_1",
+          "axis": [0.0,0.0,-1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_superchargerEfficiency_1",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_menu3_value_freefuel",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "twtly",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "textObjects": [
+      {
+        "pos": [-0.078125,1.09375,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.04375,
+        "fieldName": "tuner_menu1_value_steering",
+        "variableName": "tuner_menu1_value_steering",
+        "variableFactor": 1.0,
+        "variableFormat": "Turning %1.2f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level1_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [-0.078125,0.9375,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.04375,
+        "fieldName": "tuner_menu1_value_braking",
+        "variableName": "tuner_menu1_value_braking",
+        "variableFactor": 1.0,
+        "variableFormat": "Braking %1.2f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level1_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [-0.078125,0.78125,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.04375,
+        "fieldName": "tuner_menu1_value_axleratio",
+        "variableName": "tuner_menu1_value_axleratio",
+        "variableFactor": 1.0,
+        "variableFormat": "axleRatio %1.2f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level1_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [-0.078125,0.625,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.04375,
+        "fieldName": "tuner_menu1_value_dragcoeff",
+        "variableName": "tuner_menu1_value_dragcoeff",
+        "variableFactor": 1.0,
+        "variableFormat": "dragCoef %1.2f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level1_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [-0.078125,1.09375,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.04375,
+        "fieldName": "tuner_menu2_value_rpm",
+        "variableName": "tuner_menu2_value_rpm",
+        "variableFactor": 1.0,
+        "variableFormat": "Safe&MaxRPM %1.0f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level2_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [-0.078125,0.9375,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.04375,
+        "fieldName": "tuner_menu2_value_idlerpm",
+        "variableName": "tuner_menu2_value_idlerpm",
+        "variableFactor": 1.0,
+        "variableFormat": "IdleRPM %1.0f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level2_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [-0.078125,0.78125,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.04375,
+        "fieldName": "tuner_menu2_value_fuelpower",
+        "variableName": "tuner_menu2_value_fuelpower",
+        "variableFactor": 1.0,
+        "variableFormat": "FuelCons %1.2f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level2_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [-0.078125,0.625,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.04375,
+        "fieldName": "tuner_menu2_value_heatcoeff",
+        "variableName": "tuner_menu2_value_heatcoeff",
+        "variableFactor": 1.0,
+        "variableFormat": "Heat/Cool %1.2f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level2_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [0.076875,1.09375,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.0625,
+        "fieldName": "tuner_menu3_value_realsteer",
+        "variableName": "tuner_menu3_value_realsteer",
+        "variableFactor": 1.0,
+        "variableFormat": "True Steering %1.0f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level3_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [0.076875,0.9375,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.0625,
+        "fieldName": "tuner_menu3_value_realspeed",
+        "variableName": "tuner_menu3_value_realspeed",
+        "variableFactor": 1.0,
+        "variableFormat": "True Speed %1.0f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level3_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [0.076875,0.78125,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.0625,
+        "fieldName": "tuner_menu3_value_invincible",
+        "variableName": "tuner_menu3_value_invincible",
+        "variableFactor": 1.0,
+        "variableFormat": "Invincibility %1.0f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level3_root",
+        "lightsUp": true,
+        "autoScale": true
+      },
+      {
+        "pos": [0.076875,0.625,0.011719],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.0625,
+        "fieldName": "tuner_menu3_value_freefuel",
+        "variableName": "tuner_menu3_value_freefuel",
+        "variableFactor": 1.0,
+        "variableFormat": "Free-ish Fuel %1.0f",
+        "defaultText": "",
+        "maxLength": 10,
+        "color": "FFFFFF",
+        "wrapWidth": 14,
+        "attachedTo": "menu_level3_root",
+        "lightsUp": true,
+        "autoScale": true
+      }
+    ],
+    "animatedObjects": [
+      {
+        "objectName": "mesh",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "part_present_1",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "emitter",
+        "applyAfter": "mesh",
+        "animations": []
+      },
+      {
+        "objectName": "menu_emitter_translucent",
+        "applyAfter": "emitter",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "yaw",
+            "centerPoint": [0.0,0.25,0.0],
+            "axis": [0.0,-1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "rotation",
+            "variable": "orientation_client_y",
+            "centerPoint": [0.0,0.25,0.0],
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_root_translucent",
+        "applyAfter": "menu_emitter_translucent",
+        "animations": []
+      },
+      {
+        "objectName": "menu_root_solid",
+        "applyAfter": "menu_emitter_translucent",
+        "animations": []
+      },
+      {
+        "objectName": "menu_level1_root",
+        "applyAfter": "menu_root_translucent",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu_page",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level1",
+        "applyAfter": "menu_level1_root",
+        "animations": []
+      },
+      {
+        "objectName": "menu_level1_vmtype_off",
+        "applyAfter": "menu_level1_root",
+        "animations": []
+      },
+      {
+        "objectName": "menu_level1_vmtype_on",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level1_vmtype_on_1",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level1_vmtype_on_2",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level1_vmtype_on_3",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level1_vmtype_on_4",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2_root",
+        "applyAfter": "menu_root_translucent",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu_page",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2",
+        "applyAfter": "menu_level2_root",
+        "animations": []
+      },
+      {
+        "objectName": "menu_level2_vmtype_off",
+        "applyAfter": "menu_level2_root",
+        "animations": []
+      },
+      {
+        "objectName": "menu_level2_vmtype_on",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2_vmtype_on_1",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2_vmtype_on_2",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2_vmtype_on_3",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2_vmtype_on_4",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "boobs",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_root",
+        "applyAfter": "menu_root_translucent",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu_page",
+            "clampMin": 2.0,
+            "clampMax": 2.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3",
+        "applyAfter": "menu_level3_root",
+        "animations": []
+      },
+      {
+        "objectName": "menu_level3_off",
+        "applyAfter": "menu_level3_root",
+        "animations": []
+      },
+      {
+        "objectName": "menu_level3_on",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_realspeed",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_on_1",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_realspeed",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_on_2",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_realspeed",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_on_3",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_realspeed",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_on_4",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_realspeed",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "stackSize": 67,
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}
