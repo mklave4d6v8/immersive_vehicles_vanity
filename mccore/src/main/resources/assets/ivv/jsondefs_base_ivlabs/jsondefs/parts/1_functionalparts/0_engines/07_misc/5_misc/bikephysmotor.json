@@ -8,12 +8,6 @@
     "activeAnimations": [
       {
         "animationType": "visibility",
-        "variable": "parent_vehicle_isoccupied",
-        "clampMin": 1.0,
-        "clampMax": 1.0
-      },
-      {
-        "animationType": "visibility",
         "variable": "engine_gear",
         "clampMin": 1.0,
         "clampMax": 127.0,
@@ -28,16 +22,16 @@
     "revResistance": 4,
     "maxRPM": 400,
     "maxSafeRPM": 425,
-    "revlimitRPM": -1,
+    "revlimitRPM": 400,
     "revlimitBounce": 4,
     "idleRPM": -1,
     "startRPM": -1,
     "stallRPM": -1,
     "engineWinddownRate": 50,
     "heatingCoefficient": 0.0025,
-    "coolingCoefficient": 0.25,
+    "coolingCoefficient": 5,
     "engineWearFactor": 0.125,
-    "fuelConsumption": 0.25,
+    "fuelConsumption": 0.1,
     "gearRatios": [-1.0,0.0,1.0],
     "fuelType": "nothing",
     "isCrankingNotPitched": true
@@ -57,14 +51,14 @@
       "animations": [
         {
           "animationType": "translation",
-          "variable": "throttle",
-          "axis": [1.0,0.0,0.0],
-          "duration": 1
+          "variable": "engine_running",
+          "axis": [0.0,0.0,1.0]
         },
         {
           "animationType": "translation",
-          "variable": "parent_vehicle_isoccupied",
-          "axis": [1.0,0.0,0.0]
+          "variable": "throttle",
+          "axis": [1.0,0.0,0.0],
+          "duration": 1
         }
       ]
     },
@@ -89,13 +83,13 @@
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "engine_powered",
-            "clampMin": 1.0,
-            "clampMax": 1.0
+            "variable": "engine_reversed"
           },
           {
             "animationType": "visibility",
-            "variable": "engine_reversed"
+            "variable": "engine_running",
+            "clampMin": 1.0,
+            "clampMax": 1.0
           }
         ],
         "volumeAnimations": [
@@ -116,7 +110,7 @@
           {
             "animationType": "translation",
             "variable": "throttle",
-            "axis": [0.0,0.0625,0.0],
+            "axis": [0.0,0.0875,0.0],
             "duration": 5
           },
           {
@@ -138,32 +132,28 @@
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "engine_powered",
+            "variable": "engine_running",
             "clampMin": 1.0,
             "clampMax": 1.0
           },
           {
             "animationType": "inhibitor",
-            "variable": "engine_gear",
-            "clampMin": -1.0
+            "variable": "engine_reversed",
+            "clampMin": 1.0,
+            "clampMax": 1.0
           },
           {
             "animationType": "visibility",
-            "variable": "throttle",
-            "clampMax": 0.0625,
-            "forwardsDelay": 5
+            "variable": "velocity",
+            "clampMin": 0.1,
+            "clampMax": 32767.0
           }
         ],
         "volumeAnimations": [
           {
-            "animationType": "inhibitor",
-            "variable": "engine_gear",
-            "clampMin": -1.0
-          },
-          {
             "animationType": "translation",
             "variable": "throttle",
-            "axis": [0.0,-0.5,0.0],
+            "axis": [0.0,-1.0,0.0],
             "duration": 5
           },
           {
@@ -176,14 +166,15 @@
             "animationType": "translation",
             "variable": "speed",
             "axis": [0.0,0.1,0.0],
-            "offset": -0.125
+            "offset": -0.4,
+            "clampMax": 1.0
           }
         ],
         "pitchAnimations": [
           {
             "animationType": "translation",
             "variable": "throttle",
-            "axis": [0.0,0.0,0.0],
+            "axis": [0.0,0.25,0.0],
             "duration": 5
           },
           {
@@ -205,7 +196,7 @@
     "modelType": "none"
   },
   "general": {
-    "name": "Bruh",
+    "name": "Bicycle Chain",
     "description": "Leg so hot, hot hot leg",
     "health": 100,
     "materialLists": [

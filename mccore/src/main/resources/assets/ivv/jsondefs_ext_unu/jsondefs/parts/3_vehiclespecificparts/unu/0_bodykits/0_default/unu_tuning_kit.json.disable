@@ -1,0 +1,331 @@
+{
+  "generic": {
+    "type": "generic_unu_turboencabulator",
+    "width": 0.25,
+    "height": 0.125
+  },
+  "collisionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "UNU-compatible Tune Kit",
+      "description": "Used for modifying and tuning vehicle handling\nMust remain on vehicle to function, and must be removed when modifying vehicles with the default Configurator.\nHowever, modifications are saved to this part, and will resume when this part is replaced!\n\nMake that vehicle yours with the power of IVLabs!",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "variableModifiers": [
+    {
+      "variable": "steering_speedloss",
+      "maxValue": 1,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "velocity",
+          "axis": [0.0,0.0,0.05]
+        },
+        {
+          "animationType": "translation",
+          "variable": "!true",
+          "axis": [0.0,-0.15,0.0]
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_engine_reversed_1",
+          "axis": [-0.5,0.0,0.0],
+          "offset": 1
+        },
+        {
+          "animationType": "translation",
+          "variable": "rudder",
+          "axis": [0.12222222222222222222,0.0,0.0],
+          "offset": -0.30555555555555555555,
+          "clampMin": -0.0000001,
+          "clampMax": 1.0,
+          "absolute": true
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_steeringForceFactor",
+      "maxValue": 2,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "steering_speedloss",
+          "axis": [0.0,0.0,-0.98],
+          "offset": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_engine_reversed_1",
+          "axis": [0.0,0.5,0.0],
+          "offset": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "slip_degrees",
+          "axis": [-0.03,0.0,0.0],
+          "offset": 1.3,
+          "clampMin": 0.5,
+          "clampMax": 1.0,
+          "absolute": true
+        },
+        {
+          "animationType": "translation",
+          "variable": "slip_degrees",
+          "axis": [-0.1111111111111111111,0.0,0.0],
+          "offset": 20,
+          "clampMin": 0.001,
+          "clampMax": 1.0,
+          "absolute": true
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_overSteer",
+      "maxValue": 2,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "twtly",
+          "axis": [0.0,0.0,-0.98],
+          "offset": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "vehicle_engine_reversed_1",
+          "axis": [0.5,0.0,0.0],
+          "offset": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "slip_degrees",
+          "axis": [-0.03,0.0,0.0],
+          "offset": 1.3,
+          "clampMin": 0.5,
+          "clampMax": 1.0,
+          "absolute": true
+        },
+        {
+          "animationType": "translation",
+          "variable": "slip_degrees",
+          "axis": [-0.1111111111111111111,0.0,0.0],
+          "offset": 20,
+          "clampMin": 0.001,
+          "clampMax": 1.0,
+          "absolute": true
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_steeringForceIgnoresSpeed",
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "!true",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_brakingFactor",
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "tuner_brakingfactor_adjust",
+          "axis": [1.0,0.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_brakingFactor",
+      "animations": [
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_brakefactor_adjust",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_brakefactor_adjust",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "activator",
+          "variable": "twtly",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_realspeed_toggle",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "speed_factor",
+          "axis": [-1.0,0.0,0.0],
+          "offset": 2.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_dragCoefficient",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_realspeed_toggle",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "speed_factor",
+          "axis": [1.0,0.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_axleRatio",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_realspeed_toggle",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "speed_factor",
+          "axis": [0.625,0.0,0.0],
+          "offset": 0.375,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_axleRatio",
+      "animations": [
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_axleratio_adjust",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "tuner_axleratio_adjust",
+          "axis": [0.0,1.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "activator",
+          "variable": "twtly",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "tuner_realspeed_toggle",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "speed_factor",
+          "axis": [0.625,0.0,0.0],
+          "offset": 0.375,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_damage",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_invincible_toggle",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "twtly",
+          "axis": [0.0,0.0,1.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "variable": "vehicle_electric_usage",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "tuner_invincible_toggle",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "translation",
+          "variable": "batteryCapacity",
+          "axis": [0.0,0.0,-0.08571],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "stackSize": 4,
+    "materialLists": [
+      [
+        "mts:unuparts.unuparts_crafting_unu_sheetmetal_panel_steel:0:2",
+        "immersiveengineering:material:27:4"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}
