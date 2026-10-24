@@ -90,8 +90,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_steering",
             "value": -0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -102,8 +102,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_steering",
             "value": 0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -114,8 +114,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_steering",
             "value": 0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -136,8 +136,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_braking",
             "value": -0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -148,8 +148,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_braking",
             "value": 0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -170,8 +170,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_axleratio",
             "value": -0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -182,8 +182,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_axleratio",
             "value": 0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -204,8 +204,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_dragcoeff",
             "value": -0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -216,8 +216,8 @@
             "action": "increment",
             "variable": "tuner_menu1_value_dragcoeff",
             "value": 0.05,
-            "clampMin": -9,
-            "clampMax": 9
+            "clampMin": -9.0,
+            "clampMax": 9.0
           }
         },
         {
@@ -246,9 +246,9 @@
           "action": {
             "action": "increment",
             "variable": "tuner_menu2_value_rpm",
-            "value": -50,
-            "clampMin": -20000,
-            "clampMax": 20000
+            "value": -50.0,
+            "clampMin": -20000.0,
+            "clampMax": 20000.0
           }
         },
         {
@@ -258,9 +258,9 @@
           "action": {
             "action": "increment",
             "variable": "tuner_menu2_value_rpm",
-            "value": 50,
-            "clampMin": -20000,
-            "clampMax": 20000
+            "value": 50.0,
+            "clampMin": -20000.0,
+            "clampMax": 20000.0
           }
         },
         {
@@ -280,9 +280,9 @@
           "action": {
             "action": "increment",
             "variable": "tuner_menu2_value_idlerpm",
-            "value": -50,
-            "clampMin": -20000,
-            "clampMax": 20000
+            "value": -50.0,
+            "clampMin": -20000.0,
+            "clampMax": 20000.0
           }
         },
         {
@@ -292,9 +292,9 @@
           "action": {
             "action": "increment",
             "variable": "tuner_menu2_value_idlerpm",
-            "value": 50,
-            "clampMin": -20000,
-            "clampMax": 20000
+            "value": 50.0,
+            "clampMin": -20000.0,
+            "clampMax": 20000.0
           }
         },
         {
@@ -315,8 +315,8 @@
             "action": "increment",
             "variable": "tuner_menu2_value_fuelpower",
             "value": -0.05,
-            "clampMin": -24,
-            "clampMax": 24
+            "clampMin": -24.0,
+            "clampMax": 24.0
           }
         },
         {
@@ -327,8 +327,8 @@
             "action": "increment",
             "variable": "tuner_menu2_value_fuelpower",
             "value": 0.05,
-            "clampMin": -24,
-            "clampMax": 24
+            "clampMin": -24.0,
+            "clampMax": 24.0
           }
         },
         {
@@ -349,8 +349,8 @@
             "action": "increment",
             "variable": "tuner_menu2_value_heatcoeff",
             "value": -0.05,
-            "clampMin": -10,
-            "clampMax": 10
+            "clampMin": -10.0,
+            "clampMax": 10.0
           }
         },
         {
@@ -361,8 +361,8 @@
             "action": "increment",
             "variable": "tuner_menu2_value_heatcoeff",
             "value": 0.05,
-            "clampMin": -10,
-            "clampMax": 10
+            "clampMin": -10.0,
+            "clampMax": 10.0
           }
         },
         {
@@ -390,8 +390,8 @@
           "height": 0.125,
           "action": {
             "action": "toggle",
-            "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "variable": "tuner_menu3_value_realsteer",
+            "value": 1.0
           }
         },
         {
@@ -400,8 +400,8 @@
           "height": 0.125,
           "action": {
             "action": "toggle",
-            "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "variable": "tuner_menu3_value_realsteer",
+            "value": 1.0
           }
         },
         {
@@ -410,8 +410,8 @@
           "height": 0.125,
           "action": {
             "action": "toggle",
-            "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "variable": "tuner_menu3_value_realsteer",
+            "value": 1.0
           }
         },
         {
@@ -420,8 +420,8 @@
           "height": 0.125,
           "action": {
             "action": "toggle",
-            "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "variable": "tuner_menu3_value_realsteer",
+            "value": 1.0
           }
         },
         {
@@ -430,8 +430,8 @@
           "height": 0.125,
           "action": {
             "action": "toggle",
-            "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "variable": "tuner_menu3_value_realsteer",
+            "value": 1.0
           }
         },
         {
@@ -441,7 +441,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -451,7 +451,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -461,7 +461,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -471,7 +471,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -481,7 +481,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_realspeed",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -491,7 +491,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_invincible",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -501,7 +501,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_invincible",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -511,7 +511,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_invincible",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -521,7 +521,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_invincible",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -531,7 +531,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_invincible",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -541,7 +541,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_freefuel",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -551,7 +551,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_freefuel",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -561,7 +561,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_freefuel",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -571,7 +571,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_freefuel",
-            "value": 1
+            "value": 1.0
           }
         },
         {
@@ -581,7 +581,7 @@
           "action": {
             "action": "toggle",
             "variable": "tuner_menu3_value_freefuel",
-            "value": 1
+            "value": 1.0
           }
         }
       ]
@@ -597,12 +597,10 @@
       ]
     }
   ],
-  "initialVariables": [
-  ],
+  "initialVariables": [],
   "variableModifiers": [
     {
       "variable": "tuner_init",
-      "minValue": 0.0,
       "maxValue": 1.0,
       "animations": [
         {
@@ -1107,8 +1105,8 @@
     },
     {
       "variable": "vehicle_maxRPM_1",
-      "minValue": 50,
-      "maxValue": 65535,
+      "minValue": 50.0,
+      "maxValue": 65535.0,
       "animations": [
         {
           "animationType": "translation",
@@ -1137,8 +1135,8 @@
     },
     {
       "variable": "vehicle_maxSafeRPM_1",
-      "minValue": 50,
-      "maxValue": 65535,
+      "minValue": 50.0,
+      "maxValue": 65535.0,
       "animations": [
         {
           "animationType": "translation",
@@ -1167,8 +1165,8 @@
     },
     {
       "variable": "vehicle_revlimitRPM_1",
-      "minValue": 50,
-      "maxValue": 65535,
+      "minValue": 50.0,
+      "maxValue": 65535.0,
       "animations": [
         {
           "animationType": "translation",
@@ -1197,8 +1195,7 @@
     },
     {
       "variable": "vehicle_idleRPM_1",
-      "minValue": 0,
-      "maxValue": 65535,
+      "maxValue": 65535.0,
       "animations": [
         {
           "animationType": "translation",
@@ -1227,8 +1224,7 @@
     },
     {
       "variable": "vehicle_startRPM_1",
-      "minValue": 0,
-      "maxValue": 65535,
+      "maxValue": 65535.0,
       "animations": [
         {
           "animationType": "translation",
@@ -1257,8 +1253,7 @@
     },
     {
       "variable": "vehicle_stallRPM_1",
-      "minValue": 0,
-      "maxValue": 65535,
+      "maxValue": 65535.0,
       "animations": [
         {
           "animationType": "translation",
@@ -1346,7 +1341,7 @@
         {
           "animationType": "translation",
           "variable": "vehicle_electric_power",
-          "axis": [0.0,0.0,1],
+          "axis": [0.0,0.0,1.0],
           "offset": -14.0,
           "clampMin": 0.0,
           "clampMax": 0.0
@@ -1616,6 +1611,7 @@
           {
             "animationType": "visibility",
             "variable": "part_present_1",
+            "offset": 0.0,
             "clampMin": 0.0,
             "clampMax": 0.0
           }
@@ -1667,6 +1663,7 @@
           {
             "animationType": "visibility",
             "variable": "tuner_menu_page",
+            "offset": 0.0,
             "clampMin": 0.0,
             "clampMax": 0.0
           }
@@ -1683,12 +1680,65 @@
         "animations": []
       },
       {
+        "objectName": "menu_level1_vmtype_off_4",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu1_mode_steering",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level1_vmtype_off_3",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu1_mode_braking",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level1_vmtype_off_2",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu1_mode_axleratio",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level1_vmtype_off_1",
+        "applyAfter": "menu_level1_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu1_mode_dragcoeff",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
         "objectName": "menu_level1_vmtype_on",
         "applyAfter": "menu_level1_root",
         "animations": [
           {
             "animationType": "visibility",
             "variable": "boobs",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1700,7 +1750,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "boobs",
+            "variable": "tuner_menu1_mode_steering",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1712,7 +1763,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "boobs",
+            "variable": "tuner_menu1_mode_braking",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1724,7 +1776,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "boobs",
+            "variable": "tuner_menu1_mode_axleratio",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1736,7 +1789,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "boobs",
+            "variable": "tuner_menu1_mode_dragcoeff",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1749,6 +1803,7 @@
           {
             "animationType": "visibility",
             "variable": "tuner_menu_page",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1765,12 +1820,65 @@
         "animations": []
       },
       {
+        "objectName": "menu_level2_vmtype_off_1",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu2_mode_rpm",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2_vmtype_off_2",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu2_mode_idlerpm",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2_vmtype_off_3",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu2_mode_fuelpower",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level2_vmtype_off_4",
+        "applyAfter": "menu_level2_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu2_mode_heatcoeff",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
         "objectName": "menu_level2_vmtype_on",
         "applyAfter": "menu_level2_root",
         "animations": [
           {
             "animationType": "visibility",
             "variable": "boobs",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1782,7 +1890,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "boobs",
+            "variable": "tuner_menu2_mode_rpm",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1794,7 +1903,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "boobs",
+            "variable": "tuner_menu2_mode_idlerpm",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1806,7 +1916,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "boobs",
+            "variable": "tuner_menu2_mode_fuelpower",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1818,7 +1929,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "boobs",
+            "variable": "tuner_menu2_mode_heatcoeff",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1831,6 +1943,7 @@
           {
             "animationType": "visibility",
             "variable": "tuner_menu_page",
+            "offset": 0.0,
             "clampMin": 2.0,
             "clampMax": 2.0
           }
@@ -1847,13 +1960,66 @@
         "animations": []
       },
       {
+        "objectName": "menu_level3_off_1",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_realsteer",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_off_2",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_realspeed",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_off_3",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_invincible",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_off_4",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_freefuel",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
         "objectName": "menu_level3_on",
         "applyAfter": "menu_level3_root",
         "animations": [
           {
             "animationType": "visibility",
             "variable": "tuner_menu3_value_realspeed",
-            "clampMin": 1.0,
+            "offset": 0.0,
+            "clampMin": 0.0,
             "clampMax": 1.0
           }
         ]
@@ -1864,31 +2030,8 @@
         "animations": [
           {
             "animationType": "visibility",
-            "variable": "tuner_menu3_value_realspeed",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ]
-      },
-      {
-        "objectName": "menu_level3_on_2",
-        "applyAfter": "menu_level3_root",
-        "animations": [
-          {
-            "animationType": "visibility",
-            "variable": "tuner_menu3_value_realspeed",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ]
-      },
-      {
-        "objectName": "menu_level3_on_3",
-        "applyAfter": "menu_level3_root",
-        "animations": [
-          {
-            "animationType": "visibility",
-            "variable": "tuner_menu3_value_realspeed",
+            "variable": "tuner_menu3_value_realsteer",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
@@ -1901,13 +2044,202 @@
           {
             "animationType": "visibility",
             "variable": "tuner_menu3_value_realspeed",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_on_3",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_invincible",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "menu_level3_on_2",
+        "applyAfter": "menu_level3_root",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "tuner_menu3_value_freefuel",
+            "offset": 0.0,
             "clampMin": 1.0,
             "clampMax": 1.0
           }
         ]
       }
     ],
-    "lightObjects": [],
+    
+  "lightObjects": [
+    {
+      "objectName": "emitter",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_emitter_translucent",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_root_translucent",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_root_solid",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_root",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_off",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_off_4",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_off_3",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_off_2",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_off_1",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_on",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_on_1",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_on_2",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_on_3",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level1_vmtype_on_4",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_root",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_off",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_off_1",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_off_2",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_off_3",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_off_4",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_on",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_on_1",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_on_2",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_on_3",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level2_vmtype_on_4",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_root",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_off",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_off_1",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_off_2",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_off_3",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_off_4",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_on",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_on_1",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_on_4",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_on_3",
+      "brightnessAnimations": []
+    },
+    {
+      "objectName": "menu_level3_on_2",
+      "brightnessAnimations": []
+    }
+    ],
     "particles": [],
     "modelType": "obj"
   },

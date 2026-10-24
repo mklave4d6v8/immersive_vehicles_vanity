@@ -55,13 +55,13 @@
     "starterPower": 30,
     "shiftSpeed": 5,
     "clutchTime": 6,
-    "revResistance": 7,
+    "revResistance": 6,
     "maxRPM": 6029,
     "maxSafeRPM": 5675,
     "idleRPM": 800,
     "startRPM": 400,
-    "revlimitRPM": -1,
-    "revlimitBounce": 7,
+    "revlimitRPM": 5675,
+    "revlimitBounce": 6,
     "stallRPM": 300,
     "engineWinddownRate": 100,
     "heatingCoefficient": 1.0,
@@ -278,8 +278,8 @@
     "engine_exhaust_left": 1.0,
     "engine_exhaust_right": 1.0,
     "engine_obdiii_present": 1.0,
-    "engine_obdiii_neutral_revlimit_type": 0.0,
-    "engine_obdiii_neutral_revlimit_rpm": 3500.0,
+    "engine_obdiii_neutral_revlimit_type": 1.0,
+    "engine_obdiii_neutral_revlimit_rpm": 4000.0,
     "engine_obdiii_backfire_type": 0.0,
     "builtatlastough_horsepower": 239.0,
     "builtatlastough_torque": 282.0,
@@ -980,6 +980,14 @@
         },
         {
           "animationType": "translation",
+          "variable": "engine_rpm_percent_safe",
+          "axis": [-1.0,0.0,0.0],
+          "offset": 2.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        },
+        {
+          "animationType": "translation",
           "variable": "throttle",
           "axis": [-0.5,0.0,0.0],
           "offset": 1.5,
@@ -1094,47 +1102,6 @@
         },
         {
           "animationType": "translation",
-          "variable": "maxSafeRPM",
-          "axis": [0.0,0.0,0.625],
-          "offset": 0.0,
-          "clampMin": 1625.0,
-          "clampMax": 2.14748365E9
-        },
-        {
-          "animationType": "visibility",
-          "variable": "engine_isactuallyautomatic",
-          "offset": 0.0,
-          "clampMin": 1.0,
-          "clampMax": 1.0
-        },
-        {
-          "animationType": "visibility",
-          "variable": "engine_obdiii_neutral_revlimit_type",
-          "offset": 0.0,
-          "clampMin": 1.0,
-          "clampMax": 1.0
-        },
-        {
-          "animationType": "visibility",
-          "variable": "engine_gear",
-          "offset": 0.0,
-          "clampMin": 0.0,
-          "clampMax": 0.0
-        }
-      ]
-    },
-    {
-      "variable": "revlimitRPM",
-      "animations": [
-        {
-          "animationType": "visibility",
-          "variable": "revlimitRPM",
-          "offset": 0.0,
-          "clampMin": 1.0,
-          "clampMax": 2.14748365E9
-        },
-        {
-          "animationType": "translation",
           "variable": "engine_obdiii_neutral_revlimit_rpm",
           "axis": [0.0,0.0,1.0],
           "offset": 0.0,
@@ -1143,16 +1110,9 @@
         },
         {
           "animationType": "visibility",
-          "variable": "engine_isactuallyautomatic",
-          "offset": 0.0,
-          "clampMin": 1.0,
-          "clampMax": 1.0
-        },
-        {
-          "animationType": "visibility",
           "variable": "engine_obdiii_neutral_revlimit_type",
           "offset": 0.0,
-          "clampMin": 2.0,
+          "clampMin": 1.0,
           "clampMax": 2.0
         },
         {
@@ -1189,13 +1149,6 @@
           "offset": 1.0,
           "clampMin": 0.0,
           "clampMax": 0.0
-        },
-        {
-          "animationType": "inhibitor",
-          "variable": "engine_isactuallyautomatic",
-          "offset": 0.0,
-          "clampMin": 1.0,
-          "clampMax": 1.0
         },
         {
           "animationType": "inhibitor",
@@ -1519,51 +1472,12 @@
           "clampMax": 0.0
         },
         {
-          "animationType": "activator",
-          "variable": "true",
-          "offset": 0.0,
-          "clampMin": 0.0,
-          "clampMax": 0.0
-        },
-        {
-          "animationType": "translation",
-          "variable": "engine_clutching",
-          "axis": [-1.0,0.0,0.0],
-          "offset": 1.0,
-          "clampMin": 0.0,
-          "clampMax": 0.0
-        },
-        {
           "animationType": "translation",
           "variable": "torque_converter_slush",
           "axis": [-1.0,0.0,0.0],
           "offset": 1.0,
           "clampMin": 0.0,
           "clampMax": 0.0
-        },
-        {
-          "animationType": "inhibitor",
-          "variable": "speed",
-          "offset": 0.0,
-          "clampMin": 0.5,
-          "clampMax": 32767.0
-        },
-        {
-          "animationType": "inhibitor",
-          "variable": "engine_isactuallyautomatic",
-          "offset": 0.0,
-          "clampMin": 1.0,
-          "clampMax": 1.0
-        },
-        {
-          "animationType": "translation",
-          "variable": "!throttle",
-          "axis": [-1.0,0.0,0.0],
-          "offset": 1.0,
-          "clampMin": 0.0,
-          "clampMax": 0.0,
-          "forwardsDelay": 3,
-          "reverseDelay": 3
         }
       ]
     }

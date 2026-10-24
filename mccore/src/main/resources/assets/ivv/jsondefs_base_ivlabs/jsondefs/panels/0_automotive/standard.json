@@ -5,8 +5,8 @@
     "textureHeight": 256,
     "backgroundWidth": 400,
     "backgroundHeight": 140,
-    "textColor": "C4CCC4",
-    "litTextColor": "ECEDEC",
+    "textColor": "C4C4C4",
+    "litTextColor": "FFFFFF",
     "components": [
       {
         "pos": [-20.0,-20.0,0.0],
@@ -18,7 +18,7 @@
         "visibilityVariables": [
           [
             "horn",
-            "panel_debug"
+            "!panel_debugnt"
           ]
         ],
         "clickAction": {
